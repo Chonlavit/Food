@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var setting: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if revealViewController() != nil {
+            setting.target = self.revealViewController()
+            setting.action = #selector(SWRevealViewController.revealToggle(_:))
+        }
+        self.view.addGestureRecognizer(revealViewController().tapGestureRecognizer())
     }
 
     override func didReceiveMemoryWarning() {

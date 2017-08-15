@@ -13,6 +13,8 @@
 		C7857FC71F42BC3C005909C9 /* FoodFav.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7857FC51F42BC3C005909C9 /* FoodFav.xcdatamodeld */; };
 		C7857FC91F42BC3C005909C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7857FC81F42BC3C005909C9 /* Assets.xcassets */; };
 		C7857FCC1F42BC3C005909C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7857FCA1F42BC3C005909C9 /* LaunchScreen.storyboard */; };
+		C7857FD81F42F8E5005909C9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7857FD71F42F8E5005909C9 /* SWRevealViewController.m */; };
+		C7857FDA1F42FCBE005909C9 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7857FD91F42FCBE005909C9 /* SideBarTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		C7857FC81F42BC3C005909C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7857FCB1F42BC3C005909C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7857FCD1F42BC3C005909C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7857FD31F42F86D005909C9 /* FoodFav-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodFav-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7857FD61F42F8E5005909C9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C7857FD71F42F8E5005909C9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C7857FD91F42FCBE005909C9 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,13 @@
 				C7857FC01F42BC3C005909C9 /* ViewController.swift */,
 				C7857FC21F42BC3C005909C9 /* Main.storyboard */,
 				C7857FC81F42BC3C005909C9 /* Assets.xcassets */,
+				C7857FD91F42FCBE005909C9 /* SideBarTableViewController.swift */,
 				C7857FCA1F42BC3C005909C9 /* LaunchScreen.storyboard */,
 				C7857FCD1F42BC3C005909C9 /* Info.plist */,
 				C7857FC51F42BC3C005909C9 /* FoodFav.xcdatamodeld */,
+				C7857FD31F42F86D005909C9 /* FoodFav-Bridging-Header.h */,
+				C7857FD61F42F8E5005909C9 /* SWRevealViewController.h */,
+				C7857FD71F42F8E5005909C9 /* SWRevealViewController.m */,
 			);
 			path = FoodFav;
 			sourceTree = "<group>";
@@ -99,6 +109,7 @@
 				TargetAttributes = {
 					C7857FBA1F42BC3C005909C9 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,6 +153,8 @@
 				C7857FC71F42BC3C005909C9 /* FoodFav.xcdatamodeld in Sources */,
 				C7857FC11F42BC3C005909C9 /* ViewController.swift in Sources */,
 				C7857FBF1F42BC3C005909C9 /* AppDelegate.swift in Sources */,
+				C7857FD81F42F8E5005909C9 /* SWRevealViewController.m in Sources */,
+				C7857FDA1F42FCBE005909C9 /* SideBarTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +277,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FoodFav/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chonlavit.FoodFav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodFav/FoodFav-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,10 +292,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FoodFav/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chonlavit.FoodFav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodFav/FoodFav-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
