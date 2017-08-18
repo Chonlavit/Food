@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72078751F46D00B0022FD9D /* ShittyImageCropVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72078741F46D00B0022FD9D /* ShittyImageCropVC.swift */; };
+		C76E01A51F4567210069730E /* CheckIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76E01A41F4567210069730E /* CheckIn.storyboard */; };
+		C76E01A71F45673B0069730E /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E01A61F45673B0069730E /* CheckInViewController.swift */; };
 		C7857FBF1F42BC3C005909C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7857FBE1F42BC3C005909C9 /* AppDelegate.swift */; };
 		C7857FC11F42BC3C005909C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7857FC01F42BC3C005909C9 /* ViewController.swift */; };
 		C7857FC41F42BC3C005909C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7857FC21F42BC3C005909C9 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C72078741F46D00B0022FD9D /* ShittyImageCropVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShittyImageCropVC.swift; sourceTree = "<group>"; };
+		C76E01A41F4567210069730E /* CheckIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CheckIn.storyboard; sourceTree = "<group>"; };
+		C76E01A61F45673B0069730E /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		C7857FBB1F42BC3C005909C9 /* FoodFav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7857FBE1F42BC3C005909C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7857FC01F42BC3C005909C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C76E01A31F4567030069730E /* CheckIn */ = {
+			isa = PBXGroup;
+			children = (
+				C76E01A41F4567210069730E /* CheckIn.storyboard */,
+				C76E01A61F45673B0069730E /* CheckInViewController.swift */,
+			);
+			name = CheckIn;
+			sourceTree = "<group>";
+		};
 		C7857FB21F42BC3C005909C9 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +77,7 @@
 		C7857FBD1F42BC3C005909C9 /* FoodFav */ = {
 			isa = PBXGroup;
 			children = (
+				C76E01A31F4567030069730E /* CheckIn */,
 				C7857FBE1F42BC3C005909C9 /* AppDelegate.swift */,
 				C7857FC01F42BC3C005909C9 /* ViewController.swift */,
 				C7857FC21F42BC3C005909C9 /* Main.storyboard */,
@@ -73,6 +89,7 @@
 				C7857FD31F42F86D005909C9 /* FoodFav-Bridging-Header.h */,
 				C7857FD61F42F8E5005909C9 /* SWRevealViewController.h */,
 				C7857FD71F42F8E5005909C9 /* SWRevealViewController.m */,
+				C72078741F46D00B0022FD9D /* ShittyImageCropVC.swift */,
 			);
 			path = FoodFav;
 			sourceTree = "<group>";
@@ -139,6 +156,7 @@
 			files = (
 				C7857FCC1F42BC3C005909C9 /* LaunchScreen.storyboard in Resources */,
 				C7857FC91F42BC3C005909C9 /* Assets.xcassets in Resources */,
+				C76E01A51F4567210069730E /* CheckIn.storyboard in Resources */,
 				C7857FC41F42BC3C005909C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,10 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72078751F46D00B0022FD9D /* ShittyImageCropVC.swift in Sources */,
 				C7857FC71F42BC3C005909C9 /* FoodFav.xcdatamodeld in Sources */,
 				C7857FC11F42BC3C005909C9 /* ViewController.swift in Sources */,
 				C7857FBF1F42BC3C005909C9 /* AppDelegate.swift in Sources */,
 				C7857FD81F42F8E5005909C9 /* SWRevealViewController.m in Sources */,
+				C76E01A71F45673B0069730E /* CheckInViewController.swift in Sources */,
 				C7857FDA1F42FCBE005909C9 /* SideBarTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +341,7 @@
 				C7857FD21F42BC3C005909C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

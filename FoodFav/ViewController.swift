@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+//    d8289c41342595ef3118b8d60b5d72d1 
     
     
     @IBOutlet weak var setting: UIBarButtonItem!
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         }
         self.view.addGestureRecognizer(revealViewController().tapGestureRecognizer())
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
