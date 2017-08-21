@@ -9,11 +9,20 @@
 import UIKit
 
 class CheckInViewController: UIViewController {
+    
+    
+    @IBOutlet weak var btnSetting: UIBarButtonItem!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if revealViewController() != nil {
+            btnSetting.target = self.revealViewController()
+            btnSetting.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(revealViewController().tapGestureRecognizer())
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

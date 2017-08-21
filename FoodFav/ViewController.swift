@@ -21,8 +21,9 @@ class ViewController: UIViewController {
         if revealViewController() != nil {
             setting.target = self.revealViewController()
             setting.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(revealViewController().tapGestureRecognizer())
         }
-        self.view.addGestureRecognizer(revealViewController().tapGestureRecognizer())
+        
     }
     
 
